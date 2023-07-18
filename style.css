@@ -1,0 +1,32 @@
+/* common style for this website  */
+* {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    width: 100px;
+}
+
+nav {
+    margin: 0 240px;
+}
+
+nav,
+.nav-icon,
+.nav-option,
+.joint-options {
+    display: flex;
+}
+
+#utube,
+#tictok {
+    width: 200px;
+}
