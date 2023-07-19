@@ -3,30 +3,236 @@
     margin: 0;
 }
 
+
+nav,
+.container {
+    margin: 15px 240px;
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    text-align: center;
+    border: none;
+    margin-right: 19px;
+    border-radius: 25px;
+    margin-top: 25px;
+}
+
+button>a {
+    display: inline-block;
+    width: 100px;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+/***** header section design  */
 li {
     list-style: none;
+
 }
 
 a {
     text-decoration: none;
-}
-
-button {
-    width: 100px;
-}
-
-nav {
-    margin: 0 240px;
+    color: #3C354F;
 }
 
 nav,
 .nav-icon,
 .nav-option,
-.joint-options {
+.joint-options,
+.li-with-social {
     display: flex;
+    align-items: center;
 }
 
 #utube,
 #tictok {
-    width: 200px;
+    width: 20px;
+    margin-left: 10px;
+}
+
+.li-with-social {
+    justify-content: center;
+    background-color: #a29fa946;
+    padding: 10px 30px 10px 0px;
+    border-radius: 5px;
+    margin-left: 30px;
+    width: 175px;
+}
+
+.nav-option {
+    justify-content: center;
+}
+
+nav {
+    justify-content: space-between;
+}
+
+.joint-options>li {
+    margin-left: 30px;
+}
+
+.nav-icon>img {
+    width: 55px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+.nav-icon span {
+    color: rgb(191, 75, 137)
+}
+
+/* header banner section  */
+.header-banner {
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-info>h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.banner-info>h1 {
+    color: #F948B2;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.banner-info>p {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #f948b2ca;
+}
+
+.btn-primary>a {
+    color: white;
+}
+
+.btn-second {
+    background-color: #82c3d7;
+}
+
+.btn-second>a {
+    color: white;
+}
+
+/* Online Games Funny Videos part  */
+
+.fun-container {
+    margin-top: 110px;
+    text-align: center;
+}
+
+.fun-container>h2 {
+    font-size: 2.5rem;
+}
+
+.fun-container span {
+    color: #bb4ebb
+}
+
+.fun-box>p {
+    color: #534C64;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.fun-boxs {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fun-box {
+    width: calc(25% - 32px);
+}
+
+.fun-box>img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* responsive part of the site  */
+
+/* **navigation part done for small device  */
+@media screen and (max-width:556px) {
+
+    nav,
+    .nav-option,
+    .joint-options {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-icon,
+    .joint-options>li {
+        margin-bottom: 15px;
+    }
+}
+
+/* **Header Banner part done for small device  */
+@media screen and (max-width:556px) {
+    .banner-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .banner-info {
+        padding: 50px 30px;
+        margin-left: 20px;
+    }
+
+    .btn-box {
+        display: flex;
+    }
+}
+
+/* Online Games Funny Videos part responsive for small device */
+@media screen and (max-width:576px) {
+    .fun-container {
+        margin: 0;
+        text-align: center;
+    }
+
+    .fun-boxs {
+        flex-direction: column;
+    }
+
+    .fun-box img,
+    p {
+        width: 400px;
+    }
+}
+
+/* responsive style for tablet device  */
+
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    .fun-boxs {
+        display: grid;
+        grid-template-columns: 400px 400px;
+    }
+
+    .fun-box img,
+    p {
+        width: 350px;
+    }
+
 }
