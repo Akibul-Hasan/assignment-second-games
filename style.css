@@ -140,6 +140,7 @@ nav {
 
 .fun-container>h2 {
     font-size: 2.5rem;
+    color: black;
 }
 
 .fun-container span {
@@ -179,6 +180,10 @@ nav {
     max-width: 50%;
     margin: 215px 0px 0px 215px;
 
+}
+
+.play-left-sec h2 {
+    color: black;
 }
 
 .play-left-sec>p {
